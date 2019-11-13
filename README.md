@@ -1,6 +1,6 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v1 (20191113)**
+**Dark Web Mystery Bot v2-dev (20191114)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
@@ -59,6 +59,11 @@ Post to an account on Pleroma instance Neckbeard.xyz using token file tokenfile.
 Enjoy!
 
 -redblade7 aka redneonglow
+
+**SPECIAL THANKS**
+
+* Your New SJW Waifu (`@sjw@neckbeard.xyz`) for allowing me to host the bot on Neckbeard
+* Dielan (`@dielan@shitposter.club`) for showing me how to create Fediverse bots with Python
 
 **FEDIVERSE CONTACT INFO:**
 
