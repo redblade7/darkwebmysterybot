@@ -62,10 +62,10 @@ Enjoy!
 
 **FEDIVERSE CONTACT INFO:**
 
-* @redneonglow@neckbeard.xyz / https://neckbeard.xyz/redneonglow (main)
-* @redneonglow@anime.website / https://anime.website/redneonglow (backup)
-* @redneonglow@weeaboo.space / https://weeaboo.space/redneonglow (backup)
+* `@redneonglow@neckbeard.xyz` / https://neckbeard.xyz/redneonglow (main)
+* `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
+* `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 
 The author runs an instance of Dark Web Mystery Bot here, generating phrases hourly:
 
-* @darkweb@neckbeard.xyz / https://neckbeard.xyz/darkweb
+* `@darkweb@neckbeard.xyz` / https://neckbeard.xyz/darkweb
