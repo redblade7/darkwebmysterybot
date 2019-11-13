@@ -83,16 +83,19 @@ def readtoken(token):
     
     return json_obj["access_token"]
 
-#returns string containing the main version line
+#returns the main version line as a string
 #used in version and license commands
 def verline():
     return str("Dark Web Mystery Bot v" + progver)
 
+#return part two of version info as string
+def verpart2():
+    return str("A Fediverse phrase bot by redneonglow.\nMore info: https://github.com/redblade7/darkwebmysterybot")
+
 #shows version info
 def optversion():
     print(verline())
-    print("A Fediverse phrase bot by redneonglow.")
-    print("More info: https://github.com/redblade7/darkwebmysterybot")
+    print(verpart2())
 
 #shows license info
 def optlicense():
