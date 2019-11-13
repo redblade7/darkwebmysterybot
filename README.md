@@ -62,14 +62,10 @@ ENJOY!
 
 Fediverse contact info:
 
-* @redneonglow@neckbeard.xyz (main)
-  https://neckbeard.xyz/redneonglow
-* @redneonglow@anime.website (backup)
-  https://anime.website/redneonglow
-* @redneonglow@weeaboo.space (backup)
-  https://weeaboo.space/redneonglow
+* @redneonglow@neckbeard.xyz / https://neckbeard.xyz/redneonglow (main)
+* @redneonglow@anime.website / https://anime.website/redneonglow (backup)
+* @redneonglow@weeaboo.space / https://weeaboo.space/redneonglow (backup)
 
-The author runs an instance of Dark Web Mystery Bot here:
+The author runs an instance of Dark Web Mystery Bot here, generating phrases hourly:
 
-* @darkweb@neckbeard.xyz (phrases are generated every hour)
-  https://neckbeard.xyz/darkweb
+* @darkweb@neckbeard.xyz / https://neckbeard.xyz/darkweb
