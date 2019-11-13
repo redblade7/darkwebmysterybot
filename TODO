@@ -1,0 +1,22 @@
+Dark Web Mystery Bot
+
+TODO:
+
+* Add a mode designed for safe-space instances.
+  This would exclude the following three lists from output:
+  * conspiracy (includes fringe stuff)
+  * politics (it's divisive)
+  * medieval (may offend some)
+  * nationalities (doesn't exist yet - see below)
+* Add "nationalities" list (note: safe space mode will be added first)
+  Examples: dark web russian, marianas net filipino
+* Add "specialist" list (the same as studies, but with "ists")
+  Examples: dark net chemist, deep web accountant
+* Add "deep web potion" support a la Stromedy and ImJayStation:
+  Examples: deep web glyphosate potion, dark web crime potion, 3 AM gore potion
+* Add support for generating fake dark web sites
+  Examples: mace.onion, gender.loky, christian.clos, genie.dafy,
+  paleontology.taur, creepypasta.end, astrology.nept
+* Add the option to choose between "public" and "unlisted" mode when posting
+  (currently it's forced public)
+* Add the option to post the version string (always unlisted)
