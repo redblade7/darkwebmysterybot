@@ -38,23 +38,23 @@ SET UP THE TOKEN FILE:
 1. Create a Fediverse account for Dark Web Mystery Bot.
 2. Set up a token here: https://tinysubversions.com/notes/mastodon-bot/
 3. Create a token file by running this command:
-   curl <command you are given> > tokenfile.json
+   `curl <command you are given> > tokenfile.json`
 
 EXAMPLE COMMANDS:
 
-Show help: ./dwmbot.py -h
+Show help: `./dwmbot.py -h`
 
-Show license (Simplified BSD): ./dwmbot.py -l
+Show license (Simplified BSD): `./dwmbot.py -l`
 
-Show version: ./dwmbot.py -v
+Show version: `./dwmbot.py -v`
 
-Print 1 phrase to stdout: ./dwmbot.py -p 1
+Print 1 phrase to stdout: `./dwmbot.py -p 1`
 
-Print 4 phrases to stdout: ./dwmbot.py -p 4
+Print 4 phrases to stdout: `./dwmbot.py -p 4`
 
 Post to an account on Pleroma instance Neckbeard.xyz using token file tokenfile.json:
 
-./dwmbot.py -o https://neckbeard.xyz tokenfile.json
+`./dwmbot.py -o https://neckbeard.xyz tokenfile.json`
 
 ENJOY!
 
