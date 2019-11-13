@@ -110,8 +110,8 @@ def optlicense():
 def optprint():
     print(genphrase())
 
-#post to fediverse
-def optpost(baseurl,token):
+#post phrase to fediverse (public)
+def optpostphrase(baseurl,token):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
@@ -120,7 +120,19 @@ def optpost(baseurl,token):
         print("ERROR:",err,"\n")
         sys.exit(1)
 
-    print("Successfully posted to " + str(baseurl) + '!')
+    print("Successfully posted phrase to " + str(baseurl) + '!')
+
+#post version info to fediverse (unlisted)
+def optpostver(baseurl,token):
+
+    try:
+        mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
+        mastodon.status_post(verline()+'\n'+verpart2(),visibility="unlisted")
+    except MastodonError as err:
+        print("ERROR:",err,"\n")
+        sys.exit(1)
+
+    print("Successfully posted version info to " + str(baseurl) + '!')
 
 #main
 def main():
@@ -129,8 +141,9 @@ def main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-l","--license",help="Show license info",action="store_true")
     group.add_argument("-v","--version",action="store_true",help="Show version info")
+    group.add_argument("-w","--postversion",help="Post version info once, unlisted, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
     group.add_argument("-p","--printphrase",help="Print phrase to stdout NUM times",type=str,metavar="NUM")
-    group.add_argument("-o","--postphrase",help="Post phrase once to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
+    group.add_argument("-o","--postphrase",help="Post phrase once, public, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
 
     args = parser.parse_args()
 
@@ -138,8 +151,10 @@ def main():
         optlicense()
     elif args.version:
         optversion()
+    elif args.postversion:
+        optpostver(args.postversion[0],args.postversion[1])
     elif args.postphrase:
-        optpost(args.postphrase[0],args.postphrase[1])
+        optpostphrase(args.postphrase[0],args.postphrase[1])
     elif args.printphrase:
 
         try:

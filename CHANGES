@@ -1,6 +1,8 @@
 v2-dev (20191114)
 * Added "Thanks" section to README.md
 * Added CHANGES file
+* In preparation for --postversion option, created string-returning functions verline() and verpart2() which are incorporated into the existing optversion() and optlicense().
+* Created -w/--postversion option (posts contents of -v unlisted)
 
 v1 (20191113)
 * Initial release
