@@ -52,9 +52,13 @@ Print 1 phrase to stdout: `./dwmbot.py -p 1`
 
 Print 4 phrases to stdout: `./dwmbot.py -p 4`
 
-Post to an account on Pleroma instance Neckbeard.xyz using token file tokenfile.json:
+Post to an account on Pleroma instance Neckbeard using token file tokenfile.json:
 
 `./dwmbot.py -o https://neckbeard.xyz tokenfile.json`
+
+Post version info to an account on Pleroma instance Neckbeard using token file tokenfile.json:
+
+`./dwmbot.py -w https://neckbeard.xyz tokenfile.json`
 
 Enjoy!
 
