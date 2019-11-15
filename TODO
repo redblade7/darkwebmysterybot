@@ -2,12 +2,6 @@ Dark Web Mystery Bot
 
 TODO:
 
-* Add a mode designed for safe-space instances.
-  This would exclude the following three lists from output:
-  * conspiracy (includes fringe stuff)
-  * politics (it's divisive)
-  * medieval (may offend some)
-  * nationalities (doesn't exist yet - see below)
 * Add "nationalities" list (note: safe space mode will be added first)
   Examples: dark web russian, marianas net filipino
 * Add "specialist" list (the same as studies, but with "ists")

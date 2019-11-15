@@ -1,3 +1,7 @@
+v2-dev (20191115)
+* Created -c/--postpcphrase option (aka "safe space mode")
+* Made some more changes to functions to make this possible
+
 v2-dev (20191114)
 * Added "Thanks" section to README.md
 * Added CHANGES file

@@ -32,7 +32,7 @@
 from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
-progver = "2-dev (20191114)"
+progver = "2-dev (20191115)"
 
 #prefix
 prefix = ["dark net","dark net dybbuk","dark net mystery","dark web","dark web dybbuk","dark web mystery","deep web","deep web mystery","deep web dybbuk","marianas net","marianas net dybbuk","marianas net mystery","marianas web","marianas web dybbuk","marianas web mystery"]
@@ -53,23 +53,28 @@ politics = ["abortion","abuse","agreement","amendment","antifa","arbitration","a
 medieval = ["castle","crossbow","crown","crusader","crusades","curse","damsel","dwarf","fairy","fantasy","genie","gnome","godmother","guillotine","harem","jester","joust","king","kingdom","knight","lady","lord","magic","mace","mirror","monk","nun","paladin","prince","princess","protector","queen","rack","roundtable","scepter","sorcerer","spear","spell","staff","stepmother","sultan","sword","troll","vizier","wand","warrior","witch","wizard"]
 
 #returns the phrase as a string
-def genphrase():
-    outtype = secrets.randbelow(5)
+#off: allow offensive content (bool)
+def genphrase(off):
+    
+    if off:
+        outtype = secrets.randbelow(5)
+    else
+        outtype = secrets.randbelow(2)
 
     if outtype == 0:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(italian)
     elif outtype == 1:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
-    elif outtype == 2:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(studies)
-    elif outtype == 3:
+    elif outtype == 2 && off:
+        phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
+    elif outtype == 3 && off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(politics)
-    elif outtype == 4:
+    elif outtype == 4 && off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(medieval)
     else:
         print("ERROR: Invalid set!")
         sys.exit(1)
-    
+
     return str(phrase)
 
 #open json access token
@@ -106,16 +111,17 @@ def optlicense():
     print("2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n")
     print("THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.")
 
-#print phrase to stdout
+#print phrase to stdout (incl. offensive)
 def optprint():
-    print(genphrase())
+    print(genphrase(True))
 
 #post phrase to fediverse (public)
-def optpostphrase(baseurl,token):
+#off: allow offensive content (bool)
+def optpostphrase(baseurl,token,off):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
-        mastodon.status_post(genphrase(),visibility="public")
+        mastodon.status_post(genphrase(off),visibility="public")
     except MastodonError as err:
         print("ERROR:",err,"\n")
         sys.exit(1)
@@ -144,6 +150,7 @@ def main():
     group.add_argument("-w","--postversion",help="Post version info once, unlisted, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
     group.add_argument("-p","--printphrase",help="Print phrase to stdout NUM times",type=str,metavar="NUM")
     group.add_argument("-o","--postphrase",help="Post phrase once, public, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
+    group.add_argument("-c","--postpcphrase",help="Same as -o, but avoids phrases not suitable for safe-space instances.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
 
     args = parser.parse_args()
 
@@ -154,7 +161,9 @@ def main():
     elif args.postversion:
         optpostver(args.postversion[0],args.postversion[1])
     elif args.postphrase:
-        optpostphrase(args.postphrase[0],args.postphrase[1])
+        optpostphrase(args.postphrase[0],args.postphrase[1],False)
+    elif args.postpcphrase:
+        optpostphrase(args.postphrase[0],args.postphrase[1],True)
     elif args.printphrase:
 
         try:

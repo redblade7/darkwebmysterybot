@@ -1,6 +1,6 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v2-dev (20191114)**
+**Dark Web Mystery Bot v2-dev (20191115)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
@@ -17,15 +17,17 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 
 Phrases are derived from the following lists:
 
-* conspiracy (conspiracy theories, pseudoscience, aliens, the occult, etc.)
+* conspiracy (conspiracy theories, pseudoscience, aliens, the occult, etc.)^
 * italian (italian food, italian-american foods, pizza toppings)
-* medieval (stuff from fairy tales)
-* politics (related to us politics)
+* medieval (stuff from fairy tales)^
+* politics (related to us politics)^
 * studies (academic studies)
+
+^ excluded from safe-space mode
 
 Dark Web Mystery Bot can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
 
-**WARNING:** Dark Web Mystery Bot is currently only suitable for "free speech" instances. A special output mode for "safe space" instances will be available in a future version.
+WARNING: Deep Web Mystery Bot may produce phrases which are only suitable for "free speech" instances. For "safe space" instances, an option is provided to exclude such possibilities, but there are still no guarantees.
 
 **REQUIREMENTS:**
 
@@ -55,6 +57,10 @@ Print 4 phrases to stdout: `./dwmbot.py -p 4`
 Post to an account on Pleroma instance Neckbeard using token file tokenfile.json:
 
 `./dwmbot.py -o https://neckbeard.xyz tokenfile.json`
+
+Post to an account on Mastodon instance mastodon.social, using token file wokenfile.json, while avoiding phrases which would not be suitable for safe-space instances:
+
+`./dwmbot.py -c https://mastodon.social wokenfile.json`
 
 Post version info to an account on Pleroma instance Neckbeard using token file tokenfile.json:
 
