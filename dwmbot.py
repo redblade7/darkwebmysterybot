@@ -65,11 +65,11 @@ def genphrase(off):
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(italian)
     elif outtype == 1:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(studies)
-    elif outtype == 2 && off:
+    elif outtype == 2 and off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
-    elif outtype == 3 && off:
+    elif outtype == 3 and off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(politics)
-    elif outtype == 4 && off:
+    elif outtype == 4 and off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(medieval)
     else:
         print("ERROR: Invalid set!")
