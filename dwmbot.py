@@ -60,19 +60,21 @@ medieval = ["castle","crossbow","crown","crusader","crusades","curse","damsel","
 def genphrase(off):
     
     if off:
-        outtype = secrets.randbelow(5)
+        outtype = secrets.randbelow(6)
     else:
-        outtype = secrets.randbelow(2)
+        outtype = secrets.randbelow(3)
 
     if outtype == 0:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(italian)
     elif outtype == 1:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(studies)
-    elif outtype == 2 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
+    elif outtype == 2:
+        phrase = secrets.choice(prefix) + ' ' + secrets.choice(occupations)
     elif outtype == 3 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(politics)
+        phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
     elif outtype == 4 and off:
+        phrase = secrets.choice(prefix) + ' ' + secrets.choice(politics)
+    elif outtype == 5 and off:
         phrase = secrets.choice(prefix) + ' ' + secrets.choice(medieval)
     else:
         print("ERROR: Invalid set!")
