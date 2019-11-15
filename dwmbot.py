@@ -161,9 +161,9 @@ def main():
     elif args.postversion:
         optpostver(args.postversion[0],args.postversion[1])
     elif args.postphrase:
-        optpostphrase(args.postphrase[0],args.postphrase[1],False)
+        optpostphrase(args.postphrase[0],args.postphrase[1],True)
     elif args.postpcphrase:
-        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],True)
+        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],False)
     elif args.printphrase:
 
         try:
