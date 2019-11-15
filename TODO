@@ -4,8 +4,6 @@ TODO:
 
 * Add "nationalities" list (note: safe space mode will be added first)
   Examples: dark web russian, marianas net filipino
-* Add "specialist" list (the same as studies, but with "ists")
-  Examples: dark net chemist, deep web accountant
 * Add "deep web potion" support a la Stromedy and ImJayStation:
   Examples: deep web glyphosate potion, dark web crime potion, 3 AM gore potion
 * Add support for generating fake dark web sites
