@@ -121,7 +121,7 @@ def optpostphrase(baseurl,token,off):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
-        mastodon.status_post(genphrase(off),visibility="public")
+        mastodon.status_post(genphrase(bool(off)),visibility="public")
     except MastodonError as err:
         print("ERROR:",err,"\n")
         sys.exit(1)
@@ -163,7 +163,7 @@ def main():
     elif args.postphrase:
         optpostphrase(args.postphrase[0],args.postphrase[1],False)
     elif args.postpcphrase:
-        optpostphrase(args.postphrase[0],args.postphrase[1],True)
+        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],True)
     elif args.printphrase:
 
         try:
