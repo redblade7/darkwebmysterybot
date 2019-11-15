@@ -58,7 +58,7 @@ def genphrase(off):
     
     if off:
         outtype = secrets.randbelow(5)
-    else
+    else:
         outtype = secrets.randbelow(2)
 
     if outtype == 0:
