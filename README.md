@@ -6,11 +6,11 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 
 * marianas web mystery polyamory
 * dark net mystery programming
-* dark net mystery trigonometry
+* marianas web mystery republican
 * deep web dybbuk chicken
 * deep web capitalism
 * marianas net trade
-* dark web mystery aerobics
+* dark web mystery chemist
 * dark web pepperoni
 * dark web hate
 * deep web sausage
