@@ -1,6 +1,9 @@
+v2-dev (20191117)
+* Spelling error fix in README.md
+
 v2-dev (20191116)
 * Added "occupations" list (based on the studies list)
-* Added some more phrases to conspiracy, politics, and studies 
+* Added some more phrases to conspiracy, medieval, politics, and studies 
 
 v2-dev (20191115)
 * Created -c/--postpcphrase option (aka "safe space mode")

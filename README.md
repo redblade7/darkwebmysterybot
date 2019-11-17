@@ -1,6 +1,6 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v2-dev (20191116)**
+**Dark Web Mystery Bot v2-dev (20191117)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
@@ -28,7 +28,7 @@ Phrases are derived from the following lists:
 
 Dark Web Mystery Bot can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
 
-WARNING: Deep Web Mystery Bot may produce phrases which are only suitable for "free speech" instances. For "safe space" instances, an option is provided to exclude such possibilities, but there are still no guarantees.
+WARNING: Dark Web Mystery Bot may produce phrases which are only suitable for "free speech" instances. For "safe space" instances, an option is provided to exclude such possibilities, but there are still no guarantees.
 
 **REQUIREMENTS:**
 
