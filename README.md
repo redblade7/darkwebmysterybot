@@ -1,16 +1,16 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v2-dev (20191117)**
+**Dark Web Mystery Bot v2-dev (20191119)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
 * marianas web mystery polyamory
 * dark net mystery programming
 * marianas web mystery republican
-* deep web dybbuk chicken
-* deep web capitalism
-* marianas net trade
+* deep web mystery german
+* marianas net salvadorian
 * dark web mystery chemist
+* dark web mystery singaporean
 * dark web pepperoni
 * dark web hate
 * deep web sausage
