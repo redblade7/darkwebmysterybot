@@ -20,6 +20,7 @@ Phrases are derived from the following lists:
 * conspiracy (conspiracy theories, pseudoscience, aliens, the occult, etc.)^
 * italian (italian food, italian-american foods, pizza toppings)
 * medieval (stuff from fairy tales)^
+* nationalities (nationalities, ethnicities, races)^
 * occupations (based on the studies list below)
 * politics (related to us politics)^
 * studies (academic studies)
