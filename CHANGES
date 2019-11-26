@@ -1,3 +1,11 @@
+v2 stable (20191125)
+Summary of changes since v1:
+* Added "safe space mode" which avoids posting politically incorrect content
+* Added option to post version in unlisted mode
+* Added "nationalities" list (nationalities, ethnicities, races)
+* Added "occupations" list (based on the studies list)
+* Added more content to the lists
+
 v2-dev (20191119)
 * Added "nationalities" list (nationalities, ethnicities, races)
 * Added more to conspiracy and medieval
