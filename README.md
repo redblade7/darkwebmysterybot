@@ -1,6 +1,6 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v2.1 stable (20191126)**
+**Dark Web Mystery Bot v3-dev (20191127)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
