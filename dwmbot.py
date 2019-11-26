@@ -37,8 +37,8 @@ progver = "3-dev (20191127)"
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
 
-#suffix: .onion and fake TLDs associated with urban legends, as well as "potion"
-suffix = [".onion",".loky",".clos",".dafy",".taur",".end",".nept"]
+#faketld onion and fake TLDs associated with urban legends
+faketld = ["onion","loky","clos","dafy","taur","end","nept"]
 
 #italian (italian food, italian-american foods, pizza toppings)
 italian = ["alfredo","anchovy","artichoke","arugula","asiago","bacon","basil","bologna","bread","broccoli","calamari","cannoli","capicola","cheese","chicken","egg","eggplant","fettucine","garlic","gelato","gorgonzola","jalapeno","ham","lasagna","linguine","macaroni","meatball","mozzarella","mushroom","olive","onion","oregano","parmesan","pasta","peperoncini","pepper","pepperoni","pineapple","pizza","prosciutto","provolone","ravioli","ricotta","risotto","romano","salami","sausage","seafood","shellfish","spaghetti","spinach","tomato","tortellini","ziti"]
@@ -94,7 +94,7 @@ def pickword(off):
 #off: allow offensive content (bool)
 def genphrase(off):
     
-    outtype = secrets.randbelow(4)
+    outtype = secrets.randbelow(5)
 
     if outtype == 0:
         phrase = secrets.choice(prefix) + ' ' + pickword(off)
@@ -103,6 +103,8 @@ def genphrase(off):
     elif outtype == 2:
         phrase = secrets.choice(prefix) + ' mystery ' + pickword(off)
     elif outtype == 3:
+        phrase = pickword(off) + '.' + secrets.choice(faketld)
+    elif outtype == 4:
         #keep chance of 3 AM the same as the other potions
         potiontype = secrets.randbelow(len(prefix) + 1)
 

@@ -2,8 +2,5 @@ Dark Web Mystery Bot
 
 TODO:
 
-* Add support for generating fake dark web sites
-  Examples: mace.onion, gender.loky, christian.clos, genie.dafy,
-  paleontology.taur, creepypasta.end, astrology.nept
 * Add the option to choose between "public" and "unlisted" mode when posting
   (currently it's forced public)
