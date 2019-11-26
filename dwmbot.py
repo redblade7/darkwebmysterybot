@@ -35,7 +35,10 @@ import argparse,json,secrets,sys
 progver = "3-dev (20191127)"
 
 #prefix
-prefix = ["dark net","dark net dybbuk","dark net mystery","dark web","dark web dybbuk","dark web mystery","deep web","deep web mystery","deep web dybbuk","marianas net","marianas net dybbuk","marianas net mystery","marianas web","marianas web dybbuk","marianas web mystery"]
+prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
+
+#suffix: .onion and fake TLDs associated with urban legends, as well as "potion"
+suffix = [".onion",".loky",".clos",".dafy",".taur",".end",".nept"]
 
 #italian (italian food, italian-american foods, pizza toppings)
 italian = ["alfredo","anchovy","artichoke","arugula","asiago","bacon","basil","bologna","bread","broccoli","calamari","cannoli","capicola","cheese","chicken","egg","eggplant","fettucine","garlic","gelato","gorgonzola","jalapeno","ham","lasagna","linguine","macaroni","meatball","mozzarella","mushroom","olive","onion","oregano","parmesan","pasta","peperoncini","pepper","pepperoni","pineapple","pizza","prosciutto","provolone","ravioli","ricotta","risotto","romano","salami","sausage","seafood","shellfish","spaghetti","spinach","tomato","tortellini","ziti"]
@@ -91,7 +94,25 @@ def pickword(off):
 #off: allow offensive content (bool)
 def genphrase(off):
     
-    phrase = secrets.choice(prefix) + ' ' + pickword(off)
+    outtype = secrets.randbelow(4)
+
+    if outtype == 0:
+        phrase = secrets.choice(prefix) + ' ' + pickword(off)
+    elif outtype == 1:
+        phrase = secrets.choice(prefix) + ' dybbuk ' + pickword(off)
+    elif outtype == 2:
+        phrase = secrets.choice(prefix) + ' mystery ' + pickword(off)
+    elif outtype == 3:
+        #keep chance of 3 AM the same as the other potions
+        potiontype = secrets.randbelow(len(prefix) + 1)
+
+        if potiontype == len(prefix):
+            phrase = '3 AM ' + pickword(off) + ' potion'
+        else:
+            phrase = prefix[potiontype] + ' ' + pickword(off) + ' potion'
+    else:
+        print("ERROR: Invalid phrase type!");
+        sys.exit(1)
 
     return str(phrase)
 
