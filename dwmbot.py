@@ -32,7 +32,7 @@
 from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
-progver = "2.1 stable (20191126)"
+progver = "3-dev (20191127)"
 
 #prefix
 prefix = ["dark net","dark net dybbuk","dark net mystery","dark web","dark web dybbuk","dark web mystery","deep web","deep web mystery","deep web dybbuk","marianas net","marianas net dybbuk","marianas net mystery","marianas web","marianas web dybbuk","marianas web mystery"]
@@ -58,32 +58,40 @@ medieval = ["amulet","apprentice","banishment","banshee","beanstalk","bear","bea
 #nationalities (nationalities, ethnicities, races)
 nationalities = ["afghan","african","albanian","algerian","american","andorran","angolan","argentine","argentinian","armenian","asian","australian","austrian","azerbaijani","bahamian","bangladeshi","barbadian","belarusian","belgian","beninese","bhutanese","bolivian","bosnian","brazilian","brit","briton","bruneian","bulgarian","burmese","burundian","cambodian","cameroonian","canadian","caucasian","chadian","chilean","chinese","colombian","congolese","croat","croatian","cuban","cypriot","czech","dane","dominican","dutchman","dutchwoman","ecuadorian","egyptian","emirati","englishman","englishwoman","eritrean","estonian","ethiopian","european","fijian","filipino","finn","frenchman","frenchwoman","gabonese","gambian","georgian","german","ghanaian","greek","grenadian","guatemalan","guinean","guyanese","haitian","hawaiian","hispanic","honduran","hungarian","icelander","indian","indonesian","iranian","iraqi","irishman","irishwoman","islander","israeli","italian","ivorian","jamaican","japanese","jordanian","kazakh","kazakhistani","kenyan","korean","kuwaiti","laotian","latvian","lebanese","liberian","libyan","liechtensteiner","lithuanian","luxembourger","macedonian","madagascan","malagasy","malawian","malaysian","maldivian","malian","maltese","mauritanian","mauritian","mexican","moldovan","monacan","mongolian","montenegrin","moroccan","mozambican","namibian","native","nepalese","nicaraguan","nigerian","nigerien","norwegian","omani","pakistani","panamanian","paraguayan","peruvian","pole","portuguese","qatari","romanian","russian","rwandan","salvadoran","salvadorean","salvadorian","saudi","scot","senegalese","serb","serbian","singaporean","slovak","slovenian","somali","somalian","spaniard","sudanese","surinamese","swazi","swede","swiss","syrian","taiwanese","tadzhik","tanzanian","thai","togolese","trinidadian","tunisian","turk","turkmen","ugandan","ukrainian","uruguayan","uzbek","venezuelan","vietnamese","welshman","welshwoman","yemeni","yugoslav","zambian","zimbabwean"]
 
+#returns a random word from a random list
+#off: allow offensive content (bool)
+def pickword(off):
+
+    if off:
+        listname = secrets.randbelow(7)
+    else:
+        listname = secrets.randbelow(3)
+
+    if listname == 0:
+        listword = secrets.choice(italian)
+    elif listname == 1:
+        listword = secrets.choice(studies)
+    elif listname == 2:
+        listword = secrets.choice(occupations)
+    elif listname == 3 and off:
+        listword = secrets.choice(conspiracy)
+    elif listname == 4 and off:
+        listword = secrets.choice(politics)
+    elif listname == 5 and off:
+        listword = secrets.choice(medieval)
+    elif listname == 6 and off:
+        listword = secrets.choice(nationalities)
+    else:
+        print("ERROR: Invalid set!")
+        sys.exit(1)
+
+    return str(listword)
+
 #returns the phrase as a string
 #off: allow offensive content (bool)
 def genphrase(off):
     
-    if off:
-        outtype = secrets.randbelow(7)
-    else:
-        outtype = secrets.randbelow(3)
-
-    if outtype == 0:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(italian)
-    elif outtype == 1:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(studies)
-    elif outtype == 2:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(occupations)
-    elif outtype == 3 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(conspiracy)
-    elif outtype == 4 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(politics)
-    elif outtype == 5 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(medieval)
-    elif outtype == 6 and off:
-        phrase = secrets.choice(prefix) + ' ' + secrets.choice(nationalities)
-    else:
-        print("ERROR: Invalid set!")
-        sys.exit(1)
+    phrase = secrets.choice(prefix) + ' ' + pickword(off)
 
     return str(phrase)
 
