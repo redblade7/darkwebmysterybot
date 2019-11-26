@@ -1,3 +1,6 @@
+v3-dev (20191127)
+* Spun off separate pickword() function in preparation for new possibilities
+
 v2.1 stable (20191126)
 Summary of changes since v1:
 * Added "safe space mode" which avoids posting politically incorrect content
