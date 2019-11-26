@@ -1,4 +1,4 @@
-v2 stable (20191126)
+v2.1 stable (20191126)
 Summary of changes since v1:
 * Added "safe space mode" which avoids posting politically incorrect content
 * Added option to post version in unlisted mode
