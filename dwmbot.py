@@ -61,14 +61,17 @@ medieval = ["amulet","apprentice","banishment","banshee","beanstalk","bear","bea
 #nationalities (nationalities, ethnicities, races)
 nationalities = ["afghan","african","albanian","algerian","american","andorran","angolan","argentine","argentinian","armenian","asian","australian","austrian","azerbaijani","bahamian","bangladeshi","barbadian","belarusian","belgian","beninese","bhutanese","bolivian","bosnian","brazilian","brit","briton","bruneian","bulgarian","burmese","burundian","cambodian","cameroonian","canadian","caucasian","chadian","chilean","chinese","colombian","congolese","croat","croatian","cuban","cypriot","czech","dane","dominican","dutchman","dutchwoman","ecuadorian","egyptian","emirati","englishman","englishwoman","eritrean","estonian","ethiopian","european","fijian","filipino","finn","frenchman","frenchwoman","gabonese","gambian","georgian","german","ghanaian","greek","grenadian","guatemalan","guinean","guyanese","haitian","hawaiian","hispanic","honduran","hungarian","icelander","indian","indonesian","iranian","iraqi","irishman","irishwoman","islander","israeli","italian","ivorian","jamaican","japanese","jordanian","kazakh","kazakhistani","kenyan","korean","kuwaiti","laotian","latvian","lebanese","liberian","libyan","liechtensteiner","lithuanian","luxembourger","macedonian","madagascan","malagasy","malawian","malaysian","maldivian","malian","maltese","mauritanian","mauritian","mexican","moldovan","monacan","mongolian","montenegrin","moroccan","mozambican","namibian","native","nepalese","nicaraguan","nigerian","nigerien","norwegian","omani","pakistani","panamanian","paraguayan","peruvian","pole","portuguese","qatari","romanian","russian","rwandan","salvadoran","salvadorean","salvadorian","saudi","scot","senegalese","serb","serbian","singaporean","slovak","slovenian","somali","somalian","spaniard","sudanese","surinamese","swazi","swede","swiss","syrian","taiwanese","tadzhik","tanzanian","thai","togolese","trinidadian","tunisian","turk","turkmen","ugandan","ukrainian","uruguayan","uzbek","venezuelan","vietnamese","welshman","welshwoman","yemeni","yugoslav","zambian","zimbabwean"]
 
+#sports
+sports = ["aikido","archery","athletics","badminton","baseball","basketball","biking","billiards","bouldering","bowling","boxing","canoeing","climbing","cricket","curling","cycling","darts","diving","equestrian","fencing","fishing","football","gliding","golf","gymnastics","handball","hockey","hunting","jai-alai","judo","jiu-jitsu","jumping","karate","kickboxing","motocross","motorsport","mountaineering","netball","ninjutsu","olympics","paragliding","parasailing","pentathlon","pool","racing","riding","rollerblading","rollerskating","rowing","running","rugby","sailing","sandboarding","shooting","skateboarding","skating","skiing","skydiving","snooker","snowboarding","soccer","softball","squash","sumo","surfing","swimming","taekwondo","tennis","volleyball","weightlifting","wrestling","yoga"]
+
 #returns a random word from a random list
 #off: allow offensive content (bool)
 def pickword(off):
 
     if off:
-        listname = secrets.randbelow(7)
+        listname = secrets.randbelow(8)
     else:
-        listname = secrets.randbelow(3)
+        listname = secrets.randbelow(4)
 
     if listname == 0:
         listword = secrets.choice(italian)
@@ -76,13 +79,15 @@ def pickword(off):
         listword = secrets.choice(studies)
     elif listname == 2:
         listword = secrets.choice(occupations)
-    elif listname == 3 and off:
-        listword = secrets.choice(conspiracy)
+    elif listname == 3:
+        listword = secrets.choice(sports)
     elif listname == 4 and off:
-        listword = secrets.choice(politics)
+        listword = secrets.choice(conspiracy)
     elif listname == 5 and off:
-        listword = secrets.choice(medieval)
+        listword = secrets.choice(politics)
     elif listname == 6 and off:
+        listword = secrets.choice(medieval)
+    elif listname == 7 and off:
         listword = secrets.choice(nationalities)
     else:
         print("ERROR: Invalid set!")

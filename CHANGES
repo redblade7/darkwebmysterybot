@@ -2,6 +2,7 @@ v3-dev (20191127)
 * Spun off separate pickword() function in preparation for new possibilities
 * Added potion support
 * Added generation of fake dark web domains (incl .onion and urban legend TLDs)
+* Added "sports" list
 
 v2.1 stable (20191126)
 Summary of changes since v1:
