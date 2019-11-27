@@ -129,7 +129,7 @@ def readtoken(token):
         with open(str(token)) as replyfile:
             json_obj = json.load(replyfile)
     except OSError as err:
-            print("ERROR:",err,"\n")
+            print("ERROR:",err,'\n')
             sys.exit(1)
     
     return json_obj["access_token"]
@@ -169,7 +169,7 @@ def optpostphrase(baseurl,token,off):
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
         mastodon.status_post(genphrase(bool(off)),visibility="public")
     except MastodonError as err:
-        print("ERROR:",err,"\n")
+        print("ERROR:",err,'\n')
         sys.exit(1)
 
     print("Successfully posted phrase to " + str(baseurl) + '!')
@@ -181,7 +181,7 @@ def optpostver(baseurl,token):
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
         mastodon.status_post(verline()+'\n'+verpart2(),visibility="unlisted")
     except MastodonError as err:
-        print("ERROR:",err,"\n")
+        print("ERROR:",err,'\n')
         sys.exit(1)
 
     print("Successfully posted version info to " + str(baseurl) + '!')
