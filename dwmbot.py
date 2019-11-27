@@ -104,9 +104,9 @@ def genphrase(off):
     if outtype == 0:
         phrase = secrets.choice(prefix) + ' ' + pickword(off)
     elif outtype == 1:
-        phrase = secrets.choice(prefix) + ' dybbuk ' + pickword(off)
+        phrase = secrets.choice(prefix) + " dybbuk " + pickword(off)
     elif outtype == 2:
-        phrase = secrets.choice(prefix) + ' mystery ' + pickword(off)
+        phrase = secrets.choice(prefix) + " mystery " + pickword(off)
     elif outtype == 3:
         phrase = pickword(off) + '.' + secrets.choice(faketld)
     elif outtype == 4:
@@ -114,9 +114,9 @@ def genphrase(off):
         potiontype = secrets.randbelow(len(prefix) + 1)
 
         if potiontype == len(prefix):
-            phrase = '3 AM ' + pickword(off) + ' potion'
+            phrase = "3 AM " + pickword(off) + " potion"
         else:
-            phrase = prefix[potiontype] + ' ' + pickword(off) + ' potion'
+            phrase = prefix[potiontype] + ' ' + pickword(off) + " potion"
     else:
         print("ERROR: Invalid phrase type!");
         sys.exit(1)
