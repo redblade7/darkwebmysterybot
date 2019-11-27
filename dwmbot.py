@@ -37,7 +37,7 @@ progver = "3-dev (20191127)"
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
 
-#faketld onion and fake TLDs associated with urban legends
+#faketld (onion, i2p, and fake TLDs associated with urban legends)
 faketld = ["clos","dafy","end","i2p","loky","nept","onion","taur"]
 
 #italian (italian food, italian-american foods, pizza toppings)
