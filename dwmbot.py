@@ -38,7 +38,7 @@ progver = "3-dev (20191127)"
 prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
 
 #faketld onion and fake TLDs associated with urban legends
-faketld = ["onion","loky","clos","dafy","taur","end","nept"]
+faketld = ["clos","dafy","end","i2p","loky","nept","onion","taur"]
 
 #italian (italian food, italian-american foods, pizza toppings)
 italian = ["alfredo","anchovy","artichoke","arugula","asiago","bacon","basil","bologna","bread","broccoli","calamari","cannoli","capicola","cheese","chicken","egg","eggplant","fettucine","garlic","gelato","gorgonzola","jalapeno","ham","lasagna","linguine","macaroni","meatball","mozzarella","mushroom","olive","onion","oregano","parmesan","pasta","peperoncini","pepper","pepperoni","pineapple","pizza","prosciutto","provolone","ravioli","ricotta","risotto","romano","salami","sausage","seafood","shellfish","spaghetti","spinach","tomato","tortellini","ziti"]
