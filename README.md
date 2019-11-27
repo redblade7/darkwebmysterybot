@@ -7,12 +7,12 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 * marianas web mystery polyamory
 * dark net mystery programming
 * marianas web mystery republican
-* deep web mystery german
+* troll.clos
 * marianas net salvadorian
 * dark web mystery chemist
-* dark web mystery singaporean
+* 3 AM moroccan potion
 * dark web pepperoni
-* dark web hate
+* dark net netball
 * deep web sausage
 
 Phrases are derived from the following lists:
@@ -23,6 +23,7 @@ Phrases are derived from the following lists:
 * nationalities (nationalities, ethnicities, races)^
 * occupations (based on the studies list below)
 * politics (related to us politics)^
+* sports (professional sports, extreme sports, martial arts)
 * studies (academic studies)
 
 ^ excluded from safe-space mode
