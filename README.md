@@ -45,6 +45,17 @@ WARNING: Dark Web Mystery Bot may produce phrases which are only suitable for "f
 3. Create a token file by running this command:
    `curl <command you are given> > tokenfile.json`
 
+**VISIBILITY:**
+
+The visibility option may be any of the following:
+
+* direct (only visible to the bot account)
+* private (only visible to the bot account's followers)
+* public (visible to everyone)
+* unlisted (visible to everyone, but hidden from the public timeline)
+
+In most cases you would want to use either "public" or "unlisted" for the visibility option.
+
 **EXAMPLE COMMANDS:**
 
 Show help: `./dwmbot.py -h`
@@ -57,15 +68,15 @@ Print 1 phrase to stdout: `./dwmbot.py -p 1`
 
 Print 4 phrases to stdout: `./dwmbot.py -p 4`
 
-Post to an account on Pleroma instance Neckbeard using token file tokenfile.json:
+Post to an account on Pleroma instance Neckbeard using token file tokenfile.json and public visibility:
 
-`./dwmbot.py -o https://neckbeard.xyz tokenfile.json`
+`./dwmbot.py -o https://neckbeard.xyz tokenfile.json`public
 
-Post to an account on Mastodon instance mastodon.social, using token file wokenfile.json, while avoiding phrases which would not be suitable for safe-space instances:
+Post to an account on Mastodon instance mastodon.social, using token file wokenfile.json and unlisted visibility, while avoiding phrases which would not be suitable for safe-space instances:
 
-`./dwmbot.py -c https://mastodon.social wokenfile.json`
+`./dwmbot.py -c https://mastodon.social wokenfile.json`unlisted
 
-Post version info to an account on Pleroma instance Neckbeard using token file tokenfile.json:
+Post version info to an account on Pleroma instance Neckbeard using token file tokenfile.json (visibility always unlisted):
 
 `./dwmbot.py -w https://neckbeard.xyz tokenfile.json`
 
