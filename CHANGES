@@ -1,5 +1,7 @@
 v3-dev (20191202)
 * Comment added to dwmbot.py
+* Put lists in alphabetical order in the file
+* Add visibility support (introduces a new required command line parameter - remember to update your crontabs with this version!)
 
 v3-dev (20191127)
 * Spun off separate pickword() function in preparation for new possibilities
