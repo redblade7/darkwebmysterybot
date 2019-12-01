@@ -172,7 +172,7 @@ def optpostphrase(baseurl,token,vis,off):
         mastodon.status_post(genphrase(bool(off)),visibility=str(vis))
     except ValueError as err:
         print("ERROR:",err,'\n')
-        sys.exit(1)
+        sys.exit(2)
     except MastodonError as err:
         print("ERROR:",err,'\n')
         sys.exit(1)
