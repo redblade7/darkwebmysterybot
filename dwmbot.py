@@ -163,12 +163,16 @@ def optprint():
     print(genphrase(True))
 
 #post phrase to fediverse (public)
+#viz: Mastodon.py visibility setting (string)
 #off: allow offensive content (bool)
-def optpostphrase(baseurl,token,off):
+def optpostphrase(baseurl,token,vis,off):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
-        mastodon.status_post(genphrase(bool(off)),visibility="public")
+        mastodon.status_post(genphrase(bool(off)),visibility=str(vis))
+    except ValueError as err:
+        print("ERROR:",err,'\n')
+        sys.exit(1)
     except MastodonError as err:
         print("ERROR:",err,'\n')
         sys.exit(1)
@@ -196,8 +200,8 @@ def main():
     group.add_argument("-v","--version",action="store_true",help="Show version info")
     group.add_argument("-w","--postversion",help="Post version info once, unlisted, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
     group.add_argument("-p","--printphrase",help="Print phrase to stdout NUM times",type=str,metavar="NUM")
-    group.add_argument("-o","--postphrase",help="Post phrase once, public, to Fediverse site SERVER using token file TOKEN.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
-    group.add_argument("-c","--postpcphrase",help="Same as -o, but avoids phrases not suitable for safe-space instances.",type=str,nargs=2,metavar=("SERVER","TOKEN"))
+    group.add_argument("-o","--postphrase",help="Post phrase once to Fediverse site SERVER using token file TOKEN and visibility value VISIBILITY.",type=str,nargs=3,metavar=("SERVER","TOKEN","VISIBILITY"))
+    group.add_argument("-c","--postpcphrase",help="Same as -o, but avoids phrases not suitable for safe-space instances.",type=str,nargs=3,metavar=("SERVER","TOKEN","VISIBILITY"))
 
     args = parser.parse_args()
 
@@ -208,9 +212,9 @@ def main():
     elif args.postversion:
         optpostver(args.postversion[0],args.postversion[1])
     elif args.postphrase:
-        optpostphrase(args.postphrase[0],args.postphrase[1],True)
+        optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],True)
     elif args.postpcphrase:
-        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],False)
+        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],args.postphrase[2],False)
     elif args.printphrase:
 
         try:
