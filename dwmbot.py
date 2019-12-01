@@ -32,7 +32,8 @@
 from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
-progver = "3-dev (20191127)"
+#program version
+progver = "3-dev (20191202)"
 
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web"]

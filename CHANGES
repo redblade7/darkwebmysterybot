@@ -1,8 +1,12 @@
+v3-dev (20191202)
+* Comment added to dwmbot.py
+
 v3-dev (20191127)
 * Spun off separate pickword() function in preparation for new possibilities
 * Added potion support
 * Added generation of fake dark web domains (incl .i2p, .onion, and urban legend TLDs)
 * Added "sports" list
+* Redid probabilities
 
 v2.1 stable (20191126)
 Summary of changes since v1:
