@@ -1,3 +1,6 @@
+v3-dev (20191202_r1)
+* Fixed bug with safe space mode
+
 v3-dev (20191202)
 * Comment added to dwmbot.py
 * Put lists in alphabetical order in the file
