@@ -214,7 +214,7 @@ def main():
     elif args.postphrase:
         optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],True)
     elif args.postpcphrase:
-        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],args.postphrase[2],False)
+        optpostphrase(args.postpcphrase[0],args.postpcphrase[1],args.postpcphrase[2],False)
     elif args.printphrase:
 
         try:
