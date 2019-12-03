@@ -33,7 +33,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "3-dev (20191202-r1)"
+progver = "3-dev (20191203)"
 
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
@@ -42,7 +42,7 @@ prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
 faketld = ["clos","dafy","end","i2p","loky","nept","onion","taur"]
 
 #conspiracy (conspiracy theories, pseudoscience, aliens, the occult, etc.)
-conspiracy = ["agenda","alchemy","alien","antichrist","assassination","astrology","aura","birther","bodycount","cabal","camp","clairvoyance","classified","conspiracy","control","creationism","creepypasta","cryptozoology","deathpanel","deepstate","demolition","demon","denial","detention","ectoplasm","extermination","extraterrestrial","falseflag","fluoride","foreknowledge","freemasonry","gaybomb","genocide","ghost","ghosthunting","glyphosate","guidestones","hallucination","homeopathy","horoscope","illuminati","infowar","interrogation","intelligence","intuition","jesuit","magick","masonry","massacre","missing","mkultra","mindreading","monarch","nibiru","nostradamus","occultism","orb","order","paranoia","paranormal","plot","poison","population","possession","power","precognition","projection","prophecy","prophet","pseudohistory","pseudoscience","psychic","reincarnation","remote","ritual","revisionism","satanism","sandyhook","seance","secret","shaman","silverstein","soros","specter","spirit","spiritualism","supernatural","superstition","surveillance","telekinesis","telepathy","tinfoil","torture","truther","vaccination","vaccine","vampire","viewing","zionist"]
+conspiracy = ["agenda","alchemy","alien","antichrist","assassination","astrology","aura","birther","bodycount","cabal","camp","clairvoyance","classified","conspiracy","control","creationism","creepypasta","cryptozoology","deathpanel","deepstate","demolition","demon","denial","detention","ectoplasm","extermination","extraterrestrial","falseflag","fluoride","foreknowledge","freemasonry","gaybomb","genocide","ghost","ghosthunting","glyphosate","guidestones","hallucination","homeopathy","horoscope","illuminati","infowar","infowarrior","interrogation","intelligence","intuition","jesuit","magick","masonry","massacre","missing","mkultra","mindreading","monarch","nibiru","nostradamus","occultism","orb","order","paranoia","paranormal","pizzagate","plot","poison","population","possession","power","precognition","projection","prophecy","prophet","pseudohistory","pseudoscience","psychic","reincarnation","remote","reptilian","ritual","revisionism","roswell","satanism","sandyhook","seance","secret","shaman","silverstein","soros","specter","spirit","spiritualism","supernatural","superstition","surveillance","telekinesis","telepathy","tinfoil","torture","truther","vaccination","vaccine","vampire","viewing","zionist"]
 
 #italian (italian food, italian-american foods, pizza toppings)
 italian = ["alfredo","anchovy","artichoke","arugula","asiago","bacon","basil","bologna","bread","broccoli","calamari","cannoli","capicola","cheese","chicken","egg","eggplant","fettucine","garlic","gelato","gorgonzola","jalapeno","ham","lasagna","linguine","macaroni","meatball","mozzarella","mushroom","olive","onion","oregano","parmesan","pasta","peperoncini","pepper","pepperoni","pineapple","pizza","prosciutto","provolone","ravioli","ricotta","risotto","romano","salami","sausage","seafood","shellfish","spaghetti","spinach","tomato","tortellini","ziti"]
