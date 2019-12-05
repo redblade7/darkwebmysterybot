@@ -1,10 +1,10 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v3-dev (20191203)**
+**Dark Web Mystery Bot v3-dev (20191205)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
-* marianas web mystery polyamory
+* shadow web mystery polyamory
 * dark net mystery programming
 * marianas web mystery republican
 * troll.clos
