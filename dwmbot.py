@@ -33,10 +33,10 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "3-dev (20191203)"
+progver = "3-dev (20191205)"
 
 #prefix
-prefix = ["dark net","dark web","deep web","marianas net","marianas web"]
+prefix = ["dark net","dark web","deep web","marianas net","marianas web","shadow net","shadow web"]
 
 #faketld (onion, i2p, and fake TLDs associated with urban legends)
 faketld = ["clos","dafy","end","i2p","loky","nept","onion","taur"]
