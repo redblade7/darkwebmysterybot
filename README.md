@@ -88,6 +88,7 @@ Enjoy!
 
 * Your New SJW Waifu (`@sjw@neckbeard.xyz`) for allowing me to host the bot on Neckbeard
 * Dielan (`@dielan@shitposter.club`) for showing me how to create Fediverse bots with Python
+* chincostud (`@asylore@neckbeard.xyz`) who suggested adding shadow web/shadow net support
 
 **FEDIVERSE CONTACT INFO:**
 
