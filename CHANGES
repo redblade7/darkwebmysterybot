@@ -1,5 +1,5 @@
 v3 stable (20191208)
-Summary of changes since v2:
+Summary of changes since v2.1:
 * Add visibility support (introduces a new required command line parameter - remember to update your crontabs with this version!)
 * Added potion support
 * Added generation of fake dark web domains (incl .i2p, .onion, and urban legend TLDs)
