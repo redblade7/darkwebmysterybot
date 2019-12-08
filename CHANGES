@@ -3,14 +3,14 @@ Summary of changes since v2:
 * Add visibility support (introduces a new required command line parameter - remember to update your crontabs with this version!)
 * Added potion support
 * Added generation of fake dark web domains (incl .i2p, .onion, and urban legend TLDs)
-* Added "shadow web"/"shadow net" support (idea by @asylore@neckbeard.xyz)
+* Added "shadow web"/"shadow net" support (idea by `@asylore@neckbeard.xyz`)
 * Added "sports" list
 * Added more to conspiracy
 * Added CONTRIBUTING.md with contact information for suggestions
 * Added CODE_OF_CONDUCT.md with contents "Dark Web Mystery Bot exists for the sole purpose of entertainment."
 
 v3-dev (20191205)
-* Added "shadow web"/"shadow net" support (idea by @asylore@neckbeard.xyz)
+* Added "shadow web"/"shadow net" support (idea by `@asylore@neckbeard.xyz`)
 
 v3-dev (20191203)
 * Added more to conspiracy
