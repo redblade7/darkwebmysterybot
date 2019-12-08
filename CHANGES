@@ -7,6 +7,7 @@ Summary of changes since v2:
 * Added "sports" list
 * Added more to conspiracy
 * Added CONTRIBUTING.md with contact information for suggestions
+* Added CODE_OF_CONDUCT.md with contents "Dark Web Mystery Bot exists for the sole purpose of entertainment."
 
 v3-dev (20191205)
 * Added "shadow web"/"shadow net" support (idea by @asylore@neckbeard.xyz)
