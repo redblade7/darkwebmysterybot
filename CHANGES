@@ -1,3 +1,6 @@
+v4-dev (20200118)
+* Added support for boxes
+
 v3 stable (20191208)
 Summary of changes since v2.1:
 * Add visibility support (introduces a new required command line parameter - remember to update your crontabs with this version!)
