@@ -119,13 +119,15 @@ def genphrase(off):
         else:
             phrase = prefix[potiontype] + ' ' + pickword(off) + " potion"
     elif outtype == 5:
-        #keep chance of both box types the same
-        boxtype = secrets.randbelow(2)
+        #keep chance of all box types the same
+        boxtype = secrets.randbelow(len(prefix) + 2)
 
-        if boxtype == 0:
+        if boxtype == len(prefix) + 1:
             phrase = pickword(off) + " mystery box"
-        else:
+        elif boxtype == len(prefix):
             phrase = pickword(off) + " dybbuk box"
+        else:
+            phrase = secrets.choice(prefix) + ' ' + pickword(off) + " box"
     else:
         print("ERROR: Invalid phrase type!");
         sys.exit(1)
