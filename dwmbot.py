@@ -5,7 +5,7 @@
 # A Fediverse phrase bot inspired by YouTube videos and urban legends about
 # the Deep Web.
 #
-# Copyright (c) 2019, redneonglow
+# Copyright (c) 2019-20, redneonglow
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -33,7 +33,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "3 stable (20191208)"
+progver = "4-dev (20200118)"
 
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web","shadow net","shadow web"]
@@ -152,7 +152,7 @@ def optversion():
 #shows license info
 def optlicense():
     print(verline())
-    print("\nCopyright (c) 2019, redneonglow\nAll rights reserved.\n")
+    print("\nCopyright (c) 2019-20, redneonglow\nAll rights reserved.\n")
     print("Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n")
     print("1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.")
     print("2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n")
