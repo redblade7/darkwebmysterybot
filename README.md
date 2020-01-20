@@ -22,7 +22,7 @@ Phrases are derived from the following lists:
 * italian (italian food, italian-american foods, pizza toppings)
 * medieval (stuff from fairy tales)^
 * nationalities (nationalities, ethnicities, races)^
-* occupations (based on the studies list below)
+* occupations (originally based on the studies list below)
 * politics (related to us politics)^
 * sports (professional sports, extreme sports, martial arts)
 * studies (academic studies)
