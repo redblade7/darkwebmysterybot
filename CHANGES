@@ -1,6 +1,7 @@
 v4-dev (20200120)
 * Added a synonym to nationalities
-* Added a few more to italian and politics
+* Added a few more to conspiracy, italian, nationalities, occupations, politics, and studies
+* Removed duplicate "surveillance" from studies (was already in conspiracy)
 
 v4-dev (20200119)
 * Added support for boxes
