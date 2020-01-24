@@ -33,7 +33,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "4-dev (20200121)"
+progver = "4-dev (20200125)"
 
 #prefix
 prefix = ["dark net","dark web","deep web","marianas net","marianas web","shadow net","shadow web"]
@@ -173,7 +173,7 @@ def optprint():
     print(genphrase(True))
 
 #post phrase to fediverse (public)
-#viz: Mastodon.py visibility setting (string)
+#vis: Mastodon.py visibility setting (string)
 #off: allow offensive content (bool)
 def optpostphrase(baseurl,token,vis,off):
 
