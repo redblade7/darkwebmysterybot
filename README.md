@@ -46,6 +46,8 @@ WARNING: Dark Web Mystery Bot may produce phrases which are only suitable for "f
 3. Create a token file by running this command:
    `curl <command you are given> > tokenfile.json`
 
+Note that if you change the password on the account, you will need to create a new token file.
+
 **VISIBILITY:**
 
 The visibility option may be any of the following:
