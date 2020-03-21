@@ -130,14 +130,16 @@ def genphrase(off):
             phrase = secrets.choice(prefix) + ' ' + pickword(off) + " box"
     elif outtype == 6:
         #keep chance of all challenge types the same
-        challengetype = secrets.randbelow(3)
+        challengetype = secrets.randbelow(4)
 
         if challengetype == 0:
             phrase = "3 AM " + pickword(off) + " challenge"
         elif challengetype == 1:
             phrase = "24 hour " + pickword(off) + " challenge"
-        else:
+        elif challengetype == 2:
             phrase = "overnight " + pickword(off) + " challenge"
+        else:
+            phrase = "24 hour overnight " + pickword(off) + " challenge"
     else:
         print("ERROR: Invalid phrase type!");
         sys.exit(1)
