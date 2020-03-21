@@ -12,9 +12,10 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 * dark web mystery chemist
 * 3 AM moroccan potion
 * deep web taekwondo box
-* dark web pepperoni
+* overnight algebra challenge 
 * dark net netball
 * deep web sausage
+* 24 hour basketball challenge
 
 Phrases are derived from the following lists:
 
