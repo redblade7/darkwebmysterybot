@@ -100,7 +100,7 @@ def pickword(off):
 #off: allow offensive content (bool)
 def genphrase(off):
     
-    outtype = secrets.randbelow(6)
+    outtype = secrets.randbelow(7)
 
     if outtype == 0:
         phrase = secrets.choice(prefix) + ' ' + pickword(off)
@@ -128,6 +128,16 @@ def genphrase(off):
             phrase = pickword(off) + " dybbuk box"
         else:
             phrase = secrets.choice(prefix) + ' ' + pickword(off) + " box"
+    elif outtype == 6:
+        #keep chance of all challenge types the same
+        challengetype = secrets.randbelow(3)
+
+        if challengetype == 0:
+            phrase = "3 AM " + pickword(off) + " challenge"
+        elif challengetype == 1:
+            phrase = "24 hour " + pickword(off) + " challenge"
+        else:
+            phrase = "overnight " + pickword(off) + " challenge"
     else:
         print("ERROR: Invalid phrase type!");
         sys.exit(1)
