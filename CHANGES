@@ -1,3 +1,13 @@
+v4 stable (20200403)
+Summary of changes since v3:
+* Added lots more words
+* Added note in README.md about changing passwords and token files
+* Corrected typo in comment
+* Added support for boxes (mystery box, dybbuk box, etc)
+* Added support for challenges (24 hour challenge, 3 AM challenge, etc)
+* Remove duplicate "surveillance" from studies (was already in conspiracy)
+* Remove unneeded plurals
+
 v4-dev (20200322)
 * Added challenges
 * Added more to conspiracy and politics
