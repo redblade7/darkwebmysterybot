@@ -36,7 +36,7 @@ WARNING: Dark Web Mystery Bot may produce phrases which are only suitable for "f
 
 **REQUIREMENTS:**
 
-* Python 3
+* Python 3.6 or higher
 * Mastodon.py and its dependencies
 * curl
 
