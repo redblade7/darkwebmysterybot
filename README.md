@@ -100,6 +100,6 @@ Enjoy!
 * `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 
-The author runs an instance of Dark Web Mystery Bot here, generating phrases hourly:
+The author runs an instance of Dark Web Mystery Bot here, generating phrases every half hour:
 
 * `@darkweb@neckbeard.xyz` / https://neckbeard.xyz/darkweb
