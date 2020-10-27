@@ -1,3 +1,6 @@
+v5-dev (20201027)
+* Removed "etc." from conspiracy list in documentation
+
 v5-dev (20200706)
 * Updated documentation to be more specific about required Python version
 * Bot account on Neckbeard now generates every half hour

@@ -1,6 +1,6 @@
 # darkwebmysterybot
 
-**Dark Web Mystery Bot v5-dev (20200706)**
+**Dark Web Mystery Bot v5-dev (20201027)**
 
 Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired by YouTube videos and urban legends about the Deep Web. The bot generates silly phrases such as these:
 
@@ -19,7 +19,7 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 
 Phrases are derived from the following lists:
 
-* conspiracy (conspiracy theories, pseudoscience, aliens, the occult, etc.)^
+* conspiracy (conspiracy theories, pseudoscience, aliens, the occult)^
 * italian (italian food, italian-american foods, pizza toppings)
 * medieval (stuff from fairy tales)^
 * nationalities (nationalities, ethnicities, races)^
