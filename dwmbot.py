@@ -29,6 +29,7 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+from datetime import datetime
 from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
@@ -72,10 +73,15 @@ studies = ["accounting","administration","aerobics","aerodynamics","aerospace","
 #off: allow offensive content (bool)
 def pickword(off):
 
-    if off:
-        listname = secrets.randbelow(8)
+    if datetime.today().month == 12:
+        december = 1
     else:
-        listname = secrets.randbelow(4)
+        december = 0
+
+    if off:
+        listname = secrets.randbelow(8 + december)
+    else:
+        listname = secrets.randbelow(4 + december)
 
     if listname == 0:
         listword = secrets.choice(italian)
@@ -93,6 +99,8 @@ def pickword(off):
         listword = secrets.choice(medieval)
     elif listname == 7 and off:
         listword = secrets.choice(nationalities)
+    elif listname == 8 and off and december == 1:
+        listword = secrets.choice(christmas)
     else:
         print("ERROR: Invalid set!")
         sys.exit(1)
