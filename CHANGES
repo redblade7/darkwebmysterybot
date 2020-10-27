@@ -1,5 +1,6 @@
 v5-dev (20201028)
 * Removed "etc." from conspiracy list in documentation
+* Added christmas list (only activated during December)
 
 v5-dev (20200706)
 * Updated documentation to be more specific about required Python version

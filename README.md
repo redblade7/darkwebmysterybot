@@ -19,6 +19,7 @@ Dark Web Mystery Bot, created by redneonglow, is a Fediverse phrase bot inspired
 
 Phrases are derived from the following lists:
 
+* christmas (christmas, winter holidays)^%
 * conspiracy (conspiracy theories, pseudoscience, aliens, the occult)^
 * italian (italian food, italian-american foods, pizza toppings)
 * medieval (stuff from fairy tales)^
@@ -29,6 +30,7 @@ Phrases are derived from the following lists:
 * studies (academic studies)
 
 ^ excluded from safe-space mode
+% only active during month of December
 
 Dark Web Mystery Bot can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
 
