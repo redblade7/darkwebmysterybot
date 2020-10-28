@@ -30,6 +30,7 @@ Phrases are derived from the following lists:
 * studies (academic studies)
 
 ^ excluded from safe-space mode
+
 % only active during month of December
 
 Dark Web Mystery Bot can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
