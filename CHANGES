@@ -1,3 +1,7 @@
+v5.1 stable (20210328)
+* Removed duplicate "elf" from christmas list (already in medieval)
+* Updated copyright dates to 2021 (forgot to do this in v5)
+
 v5 stable (20210112)
 Summary of changes since v4:
 * Add some QAnon-related words to conspiracy
