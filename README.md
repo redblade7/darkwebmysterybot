@@ -100,8 +100,8 @@ Enjoy!
 **FEDIVERSE CONTACT INFO:**
 
 * `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
-* `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
+* `@redneonglow@gameliberty.club` / https://gameliberty.club/@redneonglow (backup)
 
 The author runs an instance of Dark Web Mystery Bot here, generating phrases every half hour:
 
