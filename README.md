@@ -75,17 +75,17 @@ Print 1 phrase to stdout: `./dwmbot.py -p 1`
 
 Print 4 phrases to stdout: `./dwmbot.py -p 4`
 
-Post to an account on Pleroma instance Neckbeard using token file tokenfile.json and public visibility:
+Post to an account on Pleroma instance bae.st using token file tokenfile.json and public visibility:
 
-`./dwmbot.py -o https://neckbeard.xyz tokenfile.json public`
+`./dwmbot.py -o https://bae.st tokenfile.json public`
 
 Post to an account on Mastodon instance mastodon.social, using token file wokenfile.json and unlisted visibility, while avoiding phrases which would not be suitable for safe-space instances:
 
 `./dwmbot.py -c https://mastodon.social wokenfile.json unlisted`
 
-Post version info to an account on Pleroma instance Neckbeard using token file tokenfile.json (visibility always unlisted):
+Post version info to an account on Pleroma instance bae.st using token file tokenfile.json (visibility always unlisted):
 
-`./dwmbot.py -w https://neckbeard.xyz tokenfile.json`
+`./dwmbot.py -w https://bae.st tokenfile.json`
 
 Enjoy!
 
@@ -93,16 +93,16 @@ Enjoy!
 
 **SPECIAL THANKS**
 
-* Your New SJW Waifu (`@sjw@neckbeard.xyz`) for allowing me to host the bot on Neckbeard
+* Your New SJW Waifu (`@sjw@bae.st`) for allowing me to host the bot on bae.st
 * Dielan (`@dielan@shitposter.club`) for showing me how to create Fediverse bots with Python
-* chincostud (`@asylore@neckbeard.xyz`) who suggested adding shadow web/shadow net support
+* chincostud (`@asylore@bae.st`) who suggested adding shadow web/shadow net support
 
 **FEDIVERSE CONTACT INFO:**
 
-* `@redneonglow@neckbeard.xyz` / https://neckbeard.xyz/redneonglow (main)
+* `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
 * `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 
 The author runs an instance of Dark Web Mystery Bot here, generating phrases every half hour:
 
-* `@darkweb@neckbeard.xyz` / https://neckbeard.xyz/darkweb
+* `@darkweb@bae.st` / https://bae.st/darkweb
