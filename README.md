@@ -102,6 +102,7 @@ Enjoy!
 * `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 * `@redneonglow@gameliberty.club` / https://gameliberty.club/@redneonglow (backup)
+* `@redneonglow@poa.st` / https://poa.st/@redneonglow (backup)
 
 The author runs an instance of Dark Web Mystery Bot here, generating phrases every half hour:
 
